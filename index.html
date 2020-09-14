@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="nl" dir="ltr">
   <head>
-    <title>Internetstandaarden-website Tessa Schijff</title>
+    <title>frontend-website Tessa Schijff</title>
     <meta charset="utf-8">
     <meta name="description" content="Deze site heb ik gemaakt voor mijn opleiding CMD gemaakt heb voor het vak internetstandaarden">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,56 +12,133 @@
 
   <body>
     <header>
-      <!-- ******* Navigatie ******* -->
-      <nav class="menubalk">
+      <!-- ******* boven navigatie??????? ******* -->
+      <nav class="menu1" aria-labelledby="promotie-van-reismeisje">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html" class="dropbtn">Portfolio</a>
-          <li><a href="recepten.html">Recepten</a></li>
-          <li><a href="about.html">About me</a></li>
+          <li><a href="overreismeisje.html">Over reismeisje</a>
+          <li><a href="contact.html"> Contact</a></li>
         </ul>
       </nav>
+
+      <!-- ******* Navigatie ******* -->
+      <nav class="menubalk"aria-labelledby="menubalkheader">
+        <ul>
+          <li><a href="reizen.html" class="dropbtn">Reizen</a></li>
+            <!-- Reistips -->
+            <!-- Budget -->
+            <!-- Reisroutes -->
+            <!-- Wereldreis -->
+          <li><a href="bestemmingen.html">Portfolio</a>
+          <li><a href="lekkerleven.html">Lekker leven</a></li>
+        </ul>
+      </nav>
+
+      <!-- ******* Carousel ******* -->
+      <section class="carousel-top">
+        <img src="img/ardennen.jpg" alt="Ardennen" class="afbeelding-in-carousel">
+        <h1>Ardennen</h1>
+        <!-- nogmeer-->
+      </section>
     </header>
 
+    <!-- *****************
+      ******* MAIN ******* -->
+
+
     <main>
-      <!-- ******* Inhoud ******* -->
-      <h1>Tessa's ditjes en datjes blog</h1>
+      <!-- ******* Uitgelicht ******* -->
+      <section class="uitgelicht">
+        <h2>Uitgelicht</h2>
 
+        <!-- Artikel 1 -->
+        <article class="card">
+          <h3>Titel van card</h3>
+          <time class="postingdatum">01-10-2020</time>
+          <!-- ?? --> <p>reacties</p>
+          <!-- ?? --> <p>likes</p>
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+        </article>
 
+        <!-- Artikel 2 -->
+        <article class="card"> <!--linkje op article? -->
+          <h3>Titel van card</h3>
+          <time class="postingdatum">01-10-2020</time>
+          <!-- ?? --> <p>reacties</p>
+          <!-- ?? --> <p>likes</p>
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+        </article>
 
+        <!-- Artikel 3 -->
+        <article class="card">
+          <h3>Titel van card</h3>
+          <time class="postingdatum">01-10-2020</time>
+          <!-- ?? --> <p>reacties</p>
+          <!-- ?? --> <p>likes</p>
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+        </article>
+      </section>
 
-      <!-- ******* Artikel ******* -->
-      <article>
-          <p class="postingdatum">01-10-2019</p>
-        <h2>Een heerlijk nummer</h2>
-        <object width="420" height="315" data="https://www.youtube.com/embed/w869Avr_fXI"> </object>
-      </article>
+      <!-- ******* Recente artikelen ******* -->
+      <section class="recent">
+        <h2>Uitgelicht</h2>
 
+        <!-- Artikel 1 -->
+        <article class="card">
+          <h3>Titel van card</h3>
+          <time class="postingdatum">01-10-2020</time>
+          <!-- ?? --> <p>reacties</p>
+          <!-- ?? --> <p>likes</p>
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+        </article>
 
-      <!-- ******* Artikel ******* -->
-      <article>
-        <p class="postingdatum">01-10-2019</p>
-        <h2>Denk hier maar eens over na</h2>
-        <blockquote cite="https://www.goodreads.com/author/quotes/56.Brian_Herbert" lang="en">
-          <p class="quote">“The capacity to learn is a gift,</p>
-          <p class="quote">The ability to learn is a skill,</p>
-          <p class="quote">The willingness to learn is a choice!”<p>
-          <p class="quote">― Brian Herbert </p>
-          <p class="author"><cite> House Harkonnen </cite></p>
-        </blockquote>
-        <!--Het gifje komt van: https://giphy.com/gifs/cute-think-pooh-777Aby0ZetYE8-->
-        <img src="mov/think-pooh.gif" alt="think-pooh">
-      </article>
-      
-      <!-- ******* Artikel ******* -->
-      <article class="landing">
-        <p class="postingdatum">01-10-2019</p>
-        <!--De afbeelding die ik gebruikt heb komt van https://www.ah.nl/allerhande/recept/R-R812074/pasteitje-met-ragout -->
-        <img src="img/ragout2.jpg" alt="paddenstoelenragout" class="ditjesdatjes">
-        <h2>Paddenstoelenragout</h2>
-        <p class="tessavertelt">De Paddenstoelenlasagne is mijn absolute keukentopper, dat komt door deze overheerlijke paddenstoelenragout dat de basis is van de lasagne. Als ik gasten heb kan ik de ragout (of de hele lasagne) van tevoren bereiden</p>
-        <p class="postingdatum"><a href="#ragout">...lees meer...</a></p>
-      </article>
+        <!-- Artikel 2 -->
+        <article class="card"> <!--linkje op article? -->
+          <h3>Titel van card</h3>
+          <time class="postingdatum">01-10-2020</time>
+          <!-- ?? --> <p>reacties</p>
+          <!-- ?? --> <p>likes</p>
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+        </article>
+
+        <!-- Artikel 3 -->
+        <article class="card">
+          <h3>Titel van card</h3>
+          <time class="postingdatum">01-10-2020</time>
+          <!-- ?? --> <p>reacties</p>
+          <!-- ?? --> <p>likes</p>
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+        </article>
+      </section>
+        
+      <section class="populair">
+        <!-- Fig -->
+        <figure class="bestemmingen">
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+          <figcaption>Aruba</figcaption>
+        </figure>
+
+        <!-- Fig -->
+        <figure class="bestemmingen">
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+          <figcaption>Aruba</figcaption>
+        </figure>
+
+        <!-- Fig -->
+        <figure class="bestemmingen">
+          <img src="img/ardennen.jpg" alt="overdezefoto">
+          <figcaption>Aruba</figcaption>
+        </figure>
+
+        <button>Alle landen</button>
+
+        <!--
+          <ul class="pagination">
+            <li> 1 </li>
+            <li> 2 </li>
+            <li> 3 </li>
+          </ul>
+        -->
+      </section>
     </main>
   </body>
 </html>
