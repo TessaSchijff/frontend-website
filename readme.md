@@ -74,8 +74,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Mijn startniveau:** ROOD
-**Mijn focus:** RESPONSIVE
-**Mijn opdracht:** -https://www.reismeisje.nl/
-**Breakdown-schets(en):** 
++**Mijn startniveau:** ROOD
++**Mijn focus:** RESPONSIVE
++**Mijn opdracht:** -https://www.reismeisje.nl/
++**Breakdown-schets(en):** 
             Versie 1: /Users/tessa/Downloads/Frontend-Tessa-Schijff.jpg
