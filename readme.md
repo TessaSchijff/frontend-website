@@ -6,8 +6,8 @@
 ## Oefenopdrachten
 
 Week 1
-                Opdracht 1                        https://codepen.io/TessaSchijff/pen/LYNJZrX
-                Opdracht 2                        https://codepen.io/TessaSchijff/pen/mdPGrwE
++ Opdracht 1                        https://codepen.io/TessaSchijff/pen/LYNJZrX
++ Opdracht 2                        https://codepen.io/TessaSchijff/pen/mdPGrwE
                 
 +-----------------------------------------------------------------------------------------
 
