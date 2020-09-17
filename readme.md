@@ -50,8 +50,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 +    Door problemen m.b.t. thuissituatie raakte ik compleet uitgeput en begon achter op schema te raken...
-+   Nu ik eenmaal begonnen ben vind ik het weer fantastisch om met HTML/CSS te spelen.
-+   Javascript ben ik minder goed in... maar zelfs daar heb ik vertrouwen in
++   Eenmaal begonnen vind ik het weer fantastisch om met HTML/CSS te spelen.
++   Javascript is geen kernkwaliteit van mij... maar zelfs daar heb ik vertrouwen in
 +   Ja ik loop achter*  ja ik heb er vertrouwen in dat dit goed komt!!!
 
 +   Ik vond het best een gedoe om WebP afbeeldingen om te zetten in JPG's
