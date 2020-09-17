@@ -55,11 +55,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 +   Ja ik loop achter*  ja ik heb er vertrouwen in dat dit goed komt!!!
 
 +   Ik vond het best een gedoe om WebP afbeeldingen om te zetten in JPG's
-+   Hoe werkte GitHub nou ookalweer precies? .#struggle
++   Hoe werkte GitHub nou ookalweer precies? .#struggle bestranden verwijderen etc.
 
 
-**Screenshot(s):**
-        /Users/tessa/Downloads/Screenshot_2020-09-17 frontend-website Tessa Schijff.jpg
+**Screenshot(s):** zie mapje pro6
 
 
 ### Agenda voor meeting
@@ -74,8 +73,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Mijn startniveau:** ROOD
-**Mijn focus:** RESPONSIVE
-**Mijn opdracht:** -https://www.reismeisje.nl/
-**Breakdown-schets(en):** 
-            Versie 1: /Users/tessa/Downloads/Frontend-Tessa-Schijff.jpg
++   Mijn startniveau: ROOD
++   Mijn focus:** RESPONSIVE
++   Mijn opdracht:** -https://www.reismeisje.nl/
+
++   Breakdown-schets(en): zie mapje pro6
+
