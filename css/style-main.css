@@ -1,0 +1,70 @@
+.uitgelicht {
+	background-color: bisque;
+}
+.populair {
+	background-color: darkkhaki;
+}
+.recent {
+	background-color: lightskyblue;
+}
+footer {
+	background-color: pink;
+}
+
+
+
+.carousel-top {
+	position: relative;
+	text-align: center;
+	color: white;
+	margin-bottom: 4em;
+  }
+
+/* Tekstopmaak */
+
+h1 {
+	font-family: 'Caveat', cursive;
+	font-size: 16em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h2 {
+	font-family: 'Alegreya', serif;
+	font-size: 3em;
+	color: #333;
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+
+}
+
+
+/* Elementen */
+
+
+*, *::after, *::before {
+	box-sizing:border-box;  
+}
+
+/* h2 ::after {
+	content: "";
+	background-color: #ff5b5b;
+	width: 50px;
+	height: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+} */
+
+article {
+	/* padding: 1em; */			/* NTS =binnen */
+	margin: 1em; 				/* NTS =buiten */
+}
+
+section.recent .card {
+	background-color: white;
+	box-shadow: 0 8px 6px -6px black;
+}
