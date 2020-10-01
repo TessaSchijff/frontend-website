@@ -24,6 +24,9 @@ nav ul {
   
   nav li a:hover {
     background-color: rgba(0, 96, 92, 1);
+    color:black;
+      font-weight:bolder
+      
   }
 
 
