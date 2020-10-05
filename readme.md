@@ -1,18 +1,30 @@
-# Procesverslag
-**Auteur:** Tessa Schijff - 200809765 - Klas: 208b
+# Procesverslag Frontend developing 
+> Tessa Schijff - 200809765 - Klas: 208b
+
++-----------------------------------------------------------------------------------------
+
 
 +   voor de zekerheid zijn mijn voortgangsscreenshots ook te vinden op:
 +   https://www.figma.com/file/XoLVhxUObDGAUP80oQzvLI/Frontend-developing?node-id=0%3A1
 
 +-----------------------------------------------------------------------------------------
 
-## Oefenopdrachten
+## Mijn gemaakte werk
+[figma](https://www.figma.com/file/XoLVhxUObDGAUP80oQzvLI/Frontend-developing?node-id=0%3A1)
 
-Week 1
-+   Opdracht 1                        https://codepen.io/TessaSchijff/pen/LYNJZrX
-+   Opdracht 2                        https://codepen.io/TessaSchijff/pen/mdPGrwE
+<details>	
+ <summary><b> oefenopdrachten </b></summary>
+	-[figma](https://www.figma.com/file/XoLVhxUObDGAUP80oQzvLI/Frontend-developing?node-id=0%3A1)
+	-[W1-Typografie 1](https://codepen.io/TessaSchijff/pen/LYNJZrX)
+	-[W1-Typografie 2](https://codepen.io/TessaSchijff/pen/mdPGrwE)
+</details>
+                  
                 
 +-----------------------------------------------------------------------------------------
+
+
+- [Naam](#h1)
+- [Naam](url)
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
