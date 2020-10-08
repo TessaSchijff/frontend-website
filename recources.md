@@ -1,0 +1,1 @@
+Font variant        https://css-tricks.com/almanac/properties/f/font-variant/

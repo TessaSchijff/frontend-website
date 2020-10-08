@@ -3,9 +3,6 @@
 ###############     TESSA SCHIJFF | KLAS 208b    ###############
 --------------------------------------------------------------*/
 
-/* *, *::after, *::before {
-	box-sizing:border-box;  
-  } */
 
 /*------ Basis layout ------*/
 
@@ -26,6 +23,31 @@ main {
 	align-self: center;
 	/* justify-content: stretch; */
 }
+.menubalk {
+	display: flex;
+	justify-content:flex-start;
+	align-items: flex-start;
+	
+	/* position:sticky; */
+	top:0;
+}
+.menubalk ul {
+	display: flex;
+	/* padding:0 .75em; */
+/* 	margin-left: 4em; */
+	justify-content:flex-start;
+	align-items: flex-start;
+	
+	/* position:sticky; */
+	top:0;
+}
+
+.menubalk li {
+	flex-basis: 1;
+	flex-grow: auto;
+	margin: 1em;
+}
+
 
 footer {
 	max-width: 98vw;
