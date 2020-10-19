@@ -1,3 +1,4 @@
+/* KLEURVLAKKIES GRID */
 .uitgelicht {
 	background-color: bisque;
 }
@@ -11,27 +12,33 @@ footer {
 	background-color: pink;
 }
 
-#logo {
-	max-width: 15em;
-	padding: 1em;
-}
-.menubalk li {
-list-style: none;
+/*--------------------------------------------------------------
+##############  FRONTEND-DEVELOPMENT EINDWEBSITE  ##############
+###############     TESSA SCHIJFF | KLAS 208b    ###############
+--------------------------------------------------------------*/
+
+body {
+	height: 100vh;
+	padding: 0;
 }
 
-.carousel-top {
-	position: relative;
+@font-face {
+	font-family: "South Mind", serif;
+	src: url(fonts/SouthMind-Regular.ttf);
 	text-align: center;
-	color: white;
-	margin-bottom: 4em;
 }
+
+/*--------------------------------------------------------------
+General styling
+--------------------------------------------------------------*/
+
 
 /* Tekstopmaak */
-
 h1 {
-	font-family: 'Caveat', cursive;
-	font-size: 16em;
+	font-family: "South Mind", serif;
+	font-size: 16rem;
 	position: absolute;
+	color: rgba(255, 255, 255, 0.9);
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -54,9 +61,57 @@ article h3 {
 
 p, article time {
 	font-family: 'Work Sans', sans-serif;
+	font-size: 18px;
 	margin-bottom: 0.5rem;
 }
 
+
+/* buttons */
+a .button {
+	font-family: 'Work Sans', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+.button {
+	/* position: absolute; */
+	background-color: rgb(255, 91, 91);
+	padding: 20px;
+
+	font-size: 22px;
+	text-align: center;
+}
+
+.button:hover {
+	background-color: #ff3737;
+}
+
+/* ------- Header ------- */
+.menubalk {
+	position: absolute;
+	top:0;
+	z-index: 999;
+
+	display: flex;
+	justify-content:flex-start;
+	align-items: flex-start;
+}
+
+.menubalk ul {
+	display: flex;
+	justify-content:flex-start;
+	align-items: flex-start;
+
+	top:0;
+}
+
+nav li {
+	list-style: none;
+	flex-basis: 1;
+	flex-grow: auto;
+	margin: 1em;
+	}
+	
 nav li a {
 	font-family: 'Work Sans', sans-serif;
 	color:black;
@@ -66,10 +121,21 @@ nav li a {
 	padding: 1em;
 }
 
-nav li a :hover {
+nav li a:hover {
 	background-color: rgba(255, 0, 0, 0.2);
 }
 
+#logo {
+	max-width: 15em;
+	padding: 1em;
+}
+
+.carousel-top {
+	position: relative;
+	text-align: center;
+	color: white;
+	margin-bottom: 4em;
+}
 
 /* Elementen */
 
@@ -79,7 +145,6 @@ nav li a :hover {
 }
 
 /* h2 ::after {
-	content: "";
 	background-color: #ff5b5b;
 	width: 50px;
 	height: 5px;
@@ -96,4 +161,18 @@ article {
 section.recent .card {
 	background-color: white;
 	box-shadow: 0 8px 6px -6px black;
+}
+
+/* ------- Header ------- */
+
+.footermenu ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	top:0;
+}
+
+.footermenu li a {
+	font-size: 18px;
 }

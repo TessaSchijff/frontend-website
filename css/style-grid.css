@@ -1,64 +1,6 @@
-/*--------------------------------------------------------------
-##############  FRONTEND-DEVELOPMENT EINDWEBSITE  ##############
-###############     TESSA SCHIJFF | KLAS 208b    ###############
---------------------------------------------------------------*/
 
 
-/*------ Basis layout ------*/
 
-body {
-/* 	width: 98vw; */
-/* 	min-width: 100vw;
-	max-width: 100vw; */
-	padding: 1em;
-}
-header {
-	max-width: 98vw;
-	justify-self: center;
-}
-
-main {
-	width: 98vw;
-	justify-self: center;
-	align-self: center;
-	/* justify-content: stretch; */
-}
-.menubalk {
-	display: flex;
-	justify-content:flex-start;
-	align-items: flex-start;
-	
-	/* position:sticky; */
-	top:0;
-}
-.menubalk ul {
-	display: flex;
-	/* padding:0 .75em; */
-/* 	margin-left: 4em; */
-	justify-content:flex-start;
-	align-items: flex-start;
-	
-	/* position:sticky; */
-	top:0;
-}
-
-.menubalk li {
-	flex-basis: 1;
-	flex-grow: auto;
-	margin: 1em;
-}
-
-
-footer {
-	max-width: 98vw;
-	justify-self: center;
-}
-
-footer nav {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
 
 
 
@@ -72,18 +14,21 @@ footer nav {
 		"footer footer footer";
 		grid-gap: 1em;
 		justify-content: space-between;
-	  }
+	}
 
+							/* benamingen areas in grid template */
 	section.uitgelicht {
-		grid-area: uitgelicht; /* benaming area in grid template */
+		grid-area: uitgelicht;
 	}
-	
-	section.populair {
-		grid-area: populair;
+
+	section.populair { 
+		grid-area: populair; 
+		/* position: relative; */
 	}
-	
+
 	section.recent {
 		grid-area: recent;
+
 		display: flex;
 		flex-direction: column;
 	}

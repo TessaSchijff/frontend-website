@@ -9,7 +9,8 @@
     <meta name="description" content="Deze site heb ik gemaakt voor mijn opleiding CMD voor het vak frontend-development">
 
     <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style-main.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/style-grid.css" type="text/css" media="all">
 </head>
@@ -23,15 +24,12 @@
         <!-- ========== NAVIGATIE ========== -->
         <nav class="menubalk" aria-labelledby="menubalk">
             <a href="#">
-                <img id="logo" src="img/logo-reismeisje.png" alt="logo-reismeisje">
+                <img id="logo" src="img/logo-reismeisje-nav.png" alt="logo-reismeisje">
             </a>
         <!-- <button aria-hidden="true">Menu</button> -->
             <ul>
                 <li><a href="#" class="dropbtn">Reizen</a></li>
-                    <!--Reistips
-                        Budget 
-                        Reisroutes
-                        Wereldreis -->
+                    <!--Reistips, Budget, Reisroute, Wereldreis -->
                 <li><a href="#">Bestemmingen</a>
                 <li><a href="#">Lekker leven</a></li>
             </ul>
@@ -55,7 +53,10 @@
                 <article class="card">
                     <img src="img/car-staycation.png" alt="staycation">
                     <h3>Staycation: de leukste adresjes voor een zomer in Nederland</h3>
-                    <time class="postingdatum">03-07-2020</time>
+                    <time class="postingdatum">
+                        <i class="far fa-clock"aria-hidden="true"></i>
+                        03-07-2020
+                    </time>
                     <p>23 reacties</p>
                     <p>0 likes</p>
                 </article>
@@ -63,15 +64,21 @@
                 <article class="card">
                     <img src="img/uitg-backpacken-foutjes.jpg" alt="backpacker foutjes">
                     <h3>10 Backpacker foutjes die je moet voorkomen</h3>
-                    <time class="postingdatum">02-01-2020</time>
+                    <time class="postingdatum">
+                        <i class="far fa-clock"aria-hidden="true"></i>
+                        02-01-2020
+                    </time>
                     <p>16 reacties</p>
                     <p>0 likes</p>
                 </article>
       
                 <article class="card">
-                  <img src="img/uitg-kosten-wereldreis.jpg" alt="kosten wereldreis">
-                  <h3>Wat heeft onze wereldreis gekost?</h3>
-                  <time class="postingdatum">22-08-2016</time>
+                    <img src="img/uitg-kosten-wereldreis.jpg" alt="kosten wereldreis">
+                    <h3>Wat heeft onze wereldreis gekost?</h3>
+                    <time class="postingdatum">
+                        <i class="far fa-clock"aria-hidden="true"></i>
+                        22-08-2016
+                    </time>
                   <p>32 reacties</p>
                   <p>0 likes</p>
                 </article>
@@ -105,7 +112,14 @@
                   </figure>
             </div>
             
-            <button>Alle landen</button>
+            <!-- <button>Alle landen</button> -->
+            
+            <a class="button" href="#" alt="ga naar landen-overzicht">
+                Alle landen 
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            
+            
         </section>
 
         <!-- ******* Recente artikelen ******* -->
@@ -154,6 +168,7 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/48340319f7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
