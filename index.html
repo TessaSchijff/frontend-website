@@ -1,174 +1,165 @@
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>frontend-website Tessa Schijff</title>
-    <meta name="description" content="Deze site heb ik gemaakt voor mijn opleiding CMD voor het vak frontend-development">
+        <title>frontend-website Tessa Schijff</title>
+        <meta name="author" content="Tessa Schijff">
+        <meta name="description" content="Deze site heb ik gemaakt voor mijn opleiding CMD voor het vak frontend-development">
+        <link rel="icon" href="img/icon-reismeisje-LQ.png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">  -->
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style-main.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style-grid.css" type="text/css" media="all">
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet"> <!-- Koppen --> 
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet"> <!-- Vlaktekst --> 
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> <!-- Fallback-font h1 --> 
+        
+        <!-- css -->
+        <link rel="stylesheet" href="css/homepage.css" type="text/css" media="all">
+        <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    </head>
 
 
 
-<body class="site">
-
-    <header>
-
-        <!-- ========== NAVIGATIE ========== -->
-        <nav class="menubalk" aria-labelledby="menubalk">
-            <a href="#">
-                <img id="logo" src="img/logo-reismeisje-nav.png" alt="logo-reismeisje">
+    <body class="site">
+        <header>
+            <a href="#" class="active"> <!-- logo -->
+              <img src="https://www.reismeisje.nl/themes/default/images/240x68xlogo-color.png.pagespeed.ic.izLeofd0U1.png" alt="go home">
             </a>
-        <!-- <button aria-hidden="true">Menu</button> -->
-            <ul>
-                <li><a href="#" class="dropbtn">Reizen</a></li>
-                    <!--Reistips, Budget, Reisroute, Wereldreis -->
-                <li><a href="#">Bestemmingen</a>
-                <li><a href="#">Lekker leven</a></li>
-            </ul>
-        </nav>
+            
+            <nav class="menubalk" aria-labelledby="menubalk">
+                   <button aria-hidden="true">Menu</button>
+               
+             <ul>
+               <li><a href="#">Reizen </a> </li>
+               <li><a href="#">Bestemmingen</a>
+               <li><a href="reismeisje.html">Lekker leven</a></li>
+             </ul>
+            </nav>
+            
+            <a href="#">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              Favo's
+            </a>
+        </header>
 
-        <!-- ========== CAROUSEL ========== -->
-        <section class="carousel-top">
-            <img src="img/car-ardennen.jpg" alt="Ardennen" class="afbeelding-in-carousel">
-            <h1>Ardennen</h1>
-            <!-- nogmeer-->
-          </section>
-    </header>
 
 
-    <main>
-        <!-- ******* Uitgelicht ******* -->
-        <section class="uitgelicht">
-            <h2>Uitgelicht</h2>
-  
-            <div class="kliko">
+        <!-- Content -->
+        <main>
+            <section class="teaser">
+                <h1>Vakantie</h1>
+                </section>
+
+            <!-- ******* Uitgelicht ******* -->
+            <section class="uitgelicht">
+                <h2>Uitgelicht</h2>
+    
+                <div class="kliko">
+                    <article class="card">
+                        <img src="img/car-staycation.png" alt="staycation">
+                        <h3>Staycation: de leukste adresjes voor een zomer in Nederland</h3>
+                        <time class="postingdatum">
+                            <i class="far fa-clock"aria-hidden="true"></i>
+                            03-07-2020
+                        </time>
+                        <p>23 reacties</p>
+                        <p>0 likes</p>
+                    </article>
+        
+                    <article class="card">
+                        <img src="img/uitg-backpacken-foutjes.jpg" alt="backpacker foutjes">
+                        <h3>10 Backpacker foutjes die je moet voorkomen</h3>
+                        <time class="postingdatum">
+                            <i class="far fa-clock"aria-hidden="true"></i>
+                            02-01-2020
+                        </time>
+                        <p>16 reacties</p>
+                        <p>0 likes</p>
+                    </article>
+        
+                    <article class="card">
+                        <img src="img/uitg-kosten-wereldreis.jpg" alt="kosten wereldreis">
+                        <h3>Wat heeft onze wereldreis gekost?</h3>
+                        <time class="postingdatum">
+                            <i class="far fa-clock"aria-hidden="true"></i>
+                            22-08-2016
+                        </time>
+                    <p>32 reacties</p>
+                    <p>0 likes</p>
+                    </article>
+                </div>
+            </section>
+
+
+            <!-- ******* Populair ******* -->
+            <section class="populair">
+                <h2>Populaire bestemmingen</h2>
+                
+                <div class="kliko">
+                    <figure class="bestemmingen">
+                        <img src="img/xx-aruba.jpg" alt="Aruba">
+                        <figcaption>Aruba</figcaption>
+                    </figure>
+            
+                    <figure class="bestemmingen">
+                        <img src="img/xx-costa-rica.jpg" alt="Costa rica">
+                        <figcaption>Costa Rica</figcaption>
+                    </figure>
+            
+                    <figure class="bestemmingen">
+                        <img src="img/xx-iran.jpg" alt="Iran">
+                        <figcaption>Iran</figcaption>
+                    </figure>
+        
+                    <figure class="bestemmingen">
+                        <img src="img/xx-borneo.jpg" alt="Maleisie">
+                        <figcaption>Maleisie</figcaption>
+                    </figure>
+                </div>
+                
+                <a class="button" href="#" alt="ga naar landen-overzicht">
+                    Alle landen 
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                
+                
+            </section>
+
+            <!-- ******* Recente artikelen ******* -->
+            <section class="recent">
+                <h2>Recente artikelen</h2>
+
                 <article class="card">
                     <img src="img/car-staycation.png" alt="staycation">
-                    <h3>Staycation: de leukste adresjes voor een zomer in Nederland</h3>
-                    <time class="postingdatum">
-                        <i class="far fa-clock"aria-hidden="true"></i>
-                        03-07-2020
-                    </time>
-                    <p>23 reacties</p>
-                    <p>0 likes</p>
+                    <h3>Titel van card</h3>
+                    <time class="postingdatum">01-10-2020</time>
+                    <p>reacties</p>
+                    <p>likes</p>
                 </article>
-      
+
                 <article class="card">
-                    <img src="img/uitg-backpacken-foutjes.jpg" alt="backpacker foutjes">
-                    <h3>10 Backpacker foutjes die je moet voorkomen</h3>
-                    <time class="postingdatum">
-                        <i class="far fa-clock"aria-hidden="true"></i>
-                        02-01-2020
-                    </time>
-                    <p>16 reacties</p>
-                    <p>0 likes</p>
+                    <img src="img/car-staycation.png" alt="staycation">
+                    <h3>Titel van card</h3>
+                    <time class="postingdatum">01-10-2020</time>
+                    <p>reacties</p>
+                    <p>likes</p>
                 </article>
-      
+                
                 <article class="card">
-                    <img src="img/uitg-kosten-wereldreis.jpg" alt="kosten wereldreis">
-                    <h3>Wat heeft onze wereldreis gekost?</h3>
-                    <time class="postingdatum">
-                        <i class="far fa-clock"aria-hidden="true"></i>
-                        22-08-2016
-                    </time>
-                  <p>32 reacties</p>
-                  <p>0 likes</p>
+                    <img src="img/car-staycation.png" alt="staycation">
+                    <h3>Titel van card</h3>
+                    <time class="postingdatum">01-10-2020</time>
+                    <p>reacties</p>
+                    <p>likes</p> 
                 </article>
-            </div>
-        </section>
+            </section>
 
+        </main>
 
-        <!-- ******* Populair ******* -->
-        <section class="populair">
-            <h2>Populaire bestemmingen</h2>
-            
-            <div class="kliko">
-                <figure class="bestemmingen">
-                    <img src="img/xx-aruba.jpg" alt="Aruba">
-                    <figcaption>Aruba</figcaption>
-                  </figure>
-          
-                  <figure class="bestemmingen">
-                    <img src="img/xx-costa-rica.jpg" alt="Costa rica">
-                    <figcaption>Costa Rica</figcaption>
-                  </figure>
-          
-                  <figure class="bestemmingen">
-                    <img src="img/xx-iran.jpg" alt="Iran">
-                    <figcaption>Iran</figcaption>
-                  </figure>
-    
-                  <figure class="bestemmingen">
-                    <img src="img/xx-borneo.jpg" alt="Maleisie">
-                    <figcaption>Maleisie</figcaption>
-                  </figure>
-            </div>
-            
-            <!-- <button>Alle landen</button> -->
-            
-            <a class="button" href="#" alt="ga naar landen-overzicht">
-                Alle landen 
-                <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            
-            
-        </section>
-
-        <!-- ******* Recente artikelen ******* -->
-        <section class="recent">
-            <h2>Recente artikelen</h2>
-
-            <article class="card">
-                <img src="img/car-staycation.png" alt="staycation">
-                <h3>Titel van card</h3>
-                <time class="postingdatum">01-10-2020</time>
-                <p>reacties</p>
-                <p>likes</p>
-            </article>
-
-            <article class="card">
-                <img src="img/car-staycation.png" alt="staycation">
-                <h3>Titel van card</h3>
-                <time class="postingdatum">01-10-2020</time>
-                <p>reacties</p>
-                <p>likes</p>
-            </article>
-            
-            <article class="card">
-                <img src="img/car-staycation.png" alt="staycation">
-                <h3>Titel van card</h3>
-                <time class="postingdatum">01-10-2020</time>
-                <p>reacties</p>
-                <p>likes</p> 
-            </article>
-        </section>
-
-    </main>
-
-    <footer class="voetrrr">
-        
-        <nav class="footermenu" aria-labelledby="promotie-van-reismeisje">
-            <ul>
-                <li><a href="#">Over reismeisje</a>
-                <li><a href="#">In de media</a>
-                <li><a href="#">Opdrachtgevers</a>
-                <li><a href="#"> Contact</a></li>
-                <li><a href="#">Nieuwsbrief</a>
-            </ul>
-          </nav>
-
-    </footer>
-
-    <script src="scripts/script.js"></script>
-    <script src="https://kit.fontawesome.com/48340319f7.js" crossorigin="anonymous"></script>
-</body>
+        <!-- scripts -->
+        <script src="scripts/script.js"></script>
+        <script src="https://kit.fontawesome.com/48340319f7.js" crossorigin="anonymous"></script>
+    </body>
 
 </html>

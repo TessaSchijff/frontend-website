@@ -1,0 +1,295 @@
+/*==============================================================
+####################  NOTES-TO-SELF  ##############
+================================================================
+
+Padding = binnen, Margin = buiten
+----------------------------------------------------------------
+.class1 .class2 		= alle elementen met class2 die afstammen van class1
+.class1.class2 			= element met beide classes
+p.class 				= alle p elementen met class
+div p					= alle p elementen die afstammen van een div
+--------------------------------------------------------------*/
+
+
+
+
+
+/* KLEURVLAKKIES GRID */
+/* .uitgelicht {
+	background-color: bisque;
+}
+.populair {
+	background-color: darkkhaki;
+}
+.recent {
+	background-color: lightskyblue;
+} */
+
+
+/*--------------------------------------------------------------
+##############  FRONTEND-DEVELOPMENT EINDWEBSITE  ##############
+###############     TESSA SCHIJFF | KLAS 208b    ###############
+--------------------------------------------------------------*/
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+*, *::after, *::before {
+	box-sizing:border-box;  
+	font-family:'work sans', sans-serif;
+	color: #333;
+}
+
+/* ---------- import ---------- */
+@font-face {
+	font-family: "South Mind", serif;
+	src: url(fonts/SouthMind-Regular.ttf);
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+########################## NAVIGATIE ###########################
+--------------------------------------------------------------*/
+
+  
+/*************/
+  /* DE HEADER */
+  /*************/
+  header {
+	background-color:rgba(255, 255, 255, 0.95);
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+	position:sticky;
+	/* top:0;           geen idee wat dit doet???*/
+  }
+  
+  header a {
+	text-decoration:none;
+  }
+  
+  header li {
+	font-size: 1.4em;
+  }
+  
+  header a:hover {
+	color: rgba(255, 55, 55, 1);
+  }
+  
+  /************/
+  /* het logo */
+  /************/
+  header > a:first-of-type {
+	padding:.5em;
+	display:grid;
+	grid-template-columns:min-content min-content;
+	grid-gap:.25em;
+	align-items:center;
+  }
+  
+  header > a:first-of-type img {
+	height:4em;
+  }
+  
+  /******************/
+  /* zoom link */
+  /******************/
+  header > a:last-of-type {
+	display:block;
+	width:5em; height:2.5em;
+	font-size:1em;
+	line-height:2.5em;
+	text-align:center;
+	background-color:pink;
+	border-radius:.25em;
+  }
+  
+  /************/
+  /* HET MENU */
+  /************/
+  
+  nav {
+	order:-1;  
+  }
+  
+  /*** menu button ***/
+  nav button {
+	position:relative;
+	width:5em; height:2.5em;
+	font-size:1.2em;
+	background-color:rgba(255, 91, 91, 1);
+	border:none;
+	border-radius:.25em;
+	appearance: none;
+	cursor: pointer; /* hoe ziet de cursor eruit */
+	z-index:400;
+  }
+  
+  nav button::before {
+	content:"\2630 ";
+	display:inline-block;
+	width:1em;
+	transform:scale(1);
+  }
+  
+  nav.toonMenu  button::before {
+	content:"\274C";
+  }
+  
+  nav ul { 
+	margin:0; 
+	padding:4em 0 0;
+	background:rgba(255, 255 , 255, 0.9) ;
+	list-style:none;
+	
+	/* jouw code hier */
+	position:fixed;
+	left:0; right:80; top:0; bottom:0;
+	transform:translatex(-100%);
+	transition:.5s;
+	z-index:50;
+  }
+  
+  nav.toonMenu ul {
+	/* jouw code hier */
+	transform:translatex(0);
+  }
+  
+  li {
+	margin:0; padding:0;
+  }
+  
+  li a {
+	display:block;
+	padding:1em 1em 1em 3.5em;
+	/* de meeste background properties zijn voor alle links gelijk */
+	background-size:auto 2em;
+	background-position:1em center;
+	background-repeat:no-repeat;
+	border-top:solid 1px rgba(255, 91, 91, 1);
+  }
+  
+  li.active a {
+	font-weight:bold;
+  }
+  
+  @media (min-width:64em) {
+	nav {
+	  /* jouw code hier */
+	  order:0;  
+	}
+	
+	nav button {
+	  /* jouw code hier */
+	  display:none;
+	}
+	
+	nav ul {
+	  /* jouw code hier */
+	  position:relative;
+	  padding:0;
+	  transform:none;
+	  background:none;
+	  
+	  /* new */
+	  display:flex;
+	}
+	
+	nav a {
+	  /* jouw code hier */
+	  border:none;
+	}
+	
+	.active {
+	border-bottom:solid 4px rgba(255, 91, 91, 1);
+  }
+}
+
+/*--------------------------------------------------------------
+############################ LAYOUT ############################
+--------------------------------------------------------------*/
+
+/* Tekstopmaak fullbasic */
+h1 {
+	font-family: "South Mind", "Caveat", serif;
+	font-size: 6em;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+h2 {
+	font-family: 'Alegreya', serif;
+	font-size: 36px;
+	text-align: center;
+	/* padding-bottom: 2em; */
+	margin-bottom: 2em;
+}
+
+h2:after {
+    display: block;
+    margin: 0.5em auto;
+    content: "";
+    width: 50px;
+	border-bottom: 5px solid rgba(255, 91, 91, 1);
+}
+
+article h3 {
+	font-family: 'Alegreya', serif;
+	font-size: 24px;
+}
+
+p, article time {
+	font-size: 18px;
+	margin-bottom: 0.5rem;
+}
+
+figcaption {
+	color: white;
+	align-self: center;
+	padding-bottom: 0.2em;
+	font-family: "Alegreya", serif;
+	font-size: 0.4em;
+}
+
+/*--------------------------------------------------------------
+########################## ELEMENTEN ###########################
+--------------------------------------------------------------*/
+
+/* buttons */
+a .button {
+	font-family: 'Work Sans', sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+.button {
+			/* position: absolute; */
+	background-color: rgb(255, 91, 91);
+	padding: 20px;
+
+	font-size: 22px;
+	text-align: center;
+}
+
+.button:hover {
+	background-color: #ff3737;
+}
+
+/* Article */
+article {
+	margin: 1em;
+}
+
+section.recent article.card {
+	background-color: white;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	padding: 1em;
+}
+
+article.card img {
+	display:block;
+	width: 100%;
+	height: auto;
+}

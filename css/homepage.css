@@ -1,0 +1,119 @@
+/* benamingen areas in grid template */
+section.teaser {
+	grid-area: teaser;
+}
+section.uitgelicht {
+	grid-area: uitgelicht;
+}
+section.populair {
+	grid-area: populair;
+}
+section.recent {
+	grid-area: recent;
+	display: flex;
+	flex-grow: 0;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+
+	main {
+		display:grid;
+        grid-template-areas:
+        "teaser teaser teaser"
+		"uitgelicht uitgelicht recent"
+		"populair populair recent"
+		"footer footer footer";
+		grid-gap: 1em;
+		justify-content: space-between;
+	}
+}
+
+/*--------------------------------------------------------------
+Teaser
+--------------------------------------------------------------*/
+/*teaser*/
+section.teaser {
+	background-image: url("https://www.middenoostenreizen.com//app/uploads/2019/04/iran-shiraz-nasir-al-molk-moskee.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-bottom: 1em; */
+  }
+
+/*--------------------------------------------------------------
+SECTION UITGELICHT   ---   3 koloms layout
+--------------------------------------------------------------*/
+section.uitgelicht img {
+	display: block;
+    border: 0;
+	width: 100%;
+	height: auto;
+}
+
+/* .uitgelicht img {
+    border: 0;
+	width: 100%;
+	height: auto;
+} */
+
+@media screen and (min-width: 700px) {
+	@supports (display: flex) {
+
+		.uitgelicht div {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.uitgelicht article {
+			width: 31%;
+		}
+
+	}
+}
+
+/*--------------------------------------------------------------
+SECTION POPULAIRE BESTEMMINGEN
+--------------------------------------------------------------*/
+
+section.populair div.kliko {
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 0.4rem;
+	justify-items: center;
+	margin: 0;
+	padding: 0;
+}
+  
+figure.bestemmingen {
+	padding: .2rem;
+	
+	font-size: 3rem;
+	text-align: center;
+	background-color: #333;
+	color: #d9d9d9;
+}
+  
+figure.bestemmingen > img {
+	width: 200px;
+	height: 600px;
+	margin: 0.05em;
+	transition: opacity 0.25s ease-in-out;
+	
+   -ms-object-fit: cover;
+   -moz-object-fit: cover;
+   -o-object-fit: cover;
+   -webkit-object-fit: cover;
+	object-fit: cover;
+	
+	overflow: hidden;
+}
+  
+figure > img:hover {
+	opacity: .6;
+}
+  
+/*   figcaption {
+
+  } */
