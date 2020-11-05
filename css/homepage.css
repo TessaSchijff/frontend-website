@@ -19,6 +19,21 @@ div.meta-op-foto {
 	position: relative;
 }
 
+div.meta-op-foto i.far{
+	color: white;
+}
+
+footer.meta {
+	position: absolute;
+	bottom: 10px;
+	justify-content: center;
+}
+
+footer.meta time, footer.meta p {
+	color: white;
+	font-size: 1em;
+}
+
 section.uitgelicht img {
 	display: block;
     border: 0;

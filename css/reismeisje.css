@@ -1,11 +1,10 @@
 .center {
-    display: flex;
+  display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     transform: translateZ(0);
-  }
-  
+} 
   .app {
     width: 300px;
     height: 225px; 
@@ -15,8 +14,7 @@
     border: .25em solid white;
     display: inline-block;
   }
-  
-  /* Title captions for FCC apps */
+
   span.title {
     background: rgba(0,0,0,0.5);
     color: white;
