@@ -7,17 +7,32 @@ section.teaser {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 	/* margin-bottom: 1em; */
   }
 
 /*--------------------------------------------------------------
 SECTION UITGELICHT   ---   3 koloms layout
 --------------------------------------------------------------*/
+div.meta-op-foto {
+	display: block;
+	position: relative;
+}
+
 section.uitgelicht img {
 	display: block;
     border: 0;
 	width: 100%;
 	height: auto;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	flex-direction: row;
 }
 
 /*--------------------------------------------------------------
