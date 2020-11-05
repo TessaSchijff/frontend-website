@@ -54,7 +54,7 @@ body {
 ################  HEADER & NAVIGATIE ###########################
 --------------------------------------------------------------*/
 
-/* ---------- HEADERBALK  ---------- */
+/* ---------- HEADER section ---------- */
 header {
 	background-color:rgba(255, 255, 255, 0.95);
 	display:flex;
@@ -145,7 +145,7 @@ nav ul {
 	left:0; right:0; top:0; bottom:0; /* right op 80 geeft half menu, maar naast klikken voor sluiten werkt niet !! */
 	transform:translatex(-100%);
 	transition:.5s;
-	z-index:50;
+	z-index:800;
 }
   
 nav.toonMenu ul {
@@ -230,11 +230,15 @@ article h3 {
 	font-size: 24px;
 }
 
-p, time {
+p {
 	font-size: 18px;
 	margin-bottom: 0.5rem;
 }
 
+time {
+	font-size: 18px;
+	
+}
 figcaption {
 	color: white;
 	align-self: center;

@@ -19,17 +19,23 @@ div.meta-op-foto {
 	position: relative;
 }
 
-div.meta-op-foto i.far{
+div.meta-op-foto i.far{ 
 	color: white;
 }
 
 footer.meta {
 	position: absolute;
 	bottom: 10px;
-	justify-content: center;
+	justify-content: center;/* WERKT NIET */
+	align-items: center;/* WERKT NIET */
 }
 
-footer.meta time, footer.meta p {
+/* kleur aan icons WERKT NIET */
+footer.meta time, footer.meta p { /* WERKT NIET */
+	color: white;
+	font-size: 1em;
+}
+time i { /* WERKT NIET */
 	color: white;
 	font-size: 1em;
 }
