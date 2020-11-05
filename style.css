@@ -13,8 +13,9 @@ div p					= alle p elementen die afstammen van een div
 
 
 
+/*==============================================================*/
 
-/* KLEURVLAKKIES GRID */
+/* ---------- KLEURVLAKKIES GRID ---------- */
 /* .uitgelicht {
 	background-color: bisque;
 }
@@ -26,10 +27,10 @@ div p					= alle p elementen die afstammen van een div
 } */
 
 
-/*--------------------------------------------------------------
+/*==============================================================
 ##############  FRONTEND-DEVELOPMENT EINDWEBSITE  ##############
 ###############     TESSA SCHIJFF | KLAS 208b    ###############
---------------------------------------------------------------*/
+==============================================================*/
 
 body {
 	padding: 0;
@@ -50,54 +51,46 @@ body {
 }
 
 /*--------------------------------------------------------------
-########################## NAVIGATIE ###########################
+################  HEADER & NAVIGATIE ###########################
 --------------------------------------------------------------*/
 
-  
-/*************/
-  /* DE HEADER */
-  /*************/
-  header {
+/* ---------- HEADERBALK  ---------- */
+header {
 	background-color:rgba(255, 255, 255, 0.95);
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	
 	position:sticky;
-	/* top:0;           geen idee wat dit doet???*/
-  }
+	top:0;
+}
   
-  header a {
+header a {
 	text-decoration:none;
-  }
+}
   
-  header li {
+header li {
 	font-size: 1.4em;
-  }
+}
   
-  header a:hover {
+header a:hover {
 	color: rgba(255, 55, 55, 1);
-  }
+}
   
-  /************/
-  /* het logo */
-  /************/
-  header > a:first-of-type {
+/* ---------- LOGO ---------- */
+header > a:first-of-type {
 	padding:.5em;
 	display:grid;
 	grid-template-columns:min-content min-content;
 	grid-gap:.25em;
 	align-items:center;
-  }
+}
   
-  header > a:first-of-type img {
+header > a:first-of-type img {
 	height:4em;
-  }
+}
   
-  /******************/
-  /* zoom link */
-  /******************/
-  header > a:last-of-type {
+/* ---------- KNOPJE 'ZOEKEN' ---------- */
+header > a:last-of-type {
 	display:block;
 	width:5em; height:2.5em;
 	font-size:1em;
@@ -105,18 +98,18 @@ body {
 	text-align:center;
 	background-color:pink;
 	border-radius:.25em;
-  }
+}
   
-  /************/
-  /* HET MENU */
-  /************/
-  
-  nav {
+
+
+
+/* =========== NAV =========== */
+nav {
 	order:-1;  
-  }
+}
   
-  /*** menu button ***/
-  nav button {
+/*** HAMBURGER BUTTON ***/
+nav button {
 	position:relative;
 	width:5em; height:2.5em;
 	font-size:1.2em;
@@ -124,82 +117,79 @@ body {
 	border:none;
 	border-radius:.25em;
 	appearance: none;
-	cursor: pointer; /* hoe ziet de cursor eruit */
+	cursor: pointer;
 	z-index:400;
-  }
+}
   
-  nav button::before {
+nav button::before {
 	content:"\2630 ";
 	display:inline-block;
 	width:1em;
 	transform:scale(1);
-  }
+}
   
-  nav.toonMenu  button::before {
+nav.toonMenu  button::before {
 	content:"\274C";
-  }
-  
-  nav ul { 
+}
+
+
+
+/* ------------- Opmaak hamburger linkjes -------------- */
+nav ul { 
 	margin:0; 
 	padding:4em 0 0;
-	background:rgba(255, 255 , 255, 0.9) ;
+	background:rgba(255, 180 , 180, 0.9) ;
 	list-style:none;
 	
-	/* jouw code hier */
 	position:fixed;
-	left:0; right:80; top:0; bottom:0;
+	left:0; right:0; top:0; bottom:0; /* right op 80 geeft half menu, maar naast klikken voor sluiten werkt niet !! */
 	transform:translatex(-100%);
 	transition:.5s;
 	z-index:50;
-  }
+}
   
-  nav.toonMenu ul {
-	/* jouw code hier */
+nav.toonMenu ul {
 	transform:translatex(0);
-  }
+}
   
-  li {
+li {
 	margin:0; padding:0;
-  }
+}
   
-  li a {
+li a {
 	display:block;
 	padding:1em 1em 1em 3.5em;
-	/* de meeste background properties zijn voor alle links gelijk */
-	background-size:auto 2em;
-	background-position:1em center;
-	background-repeat:no-repeat;
-	border-top:solid 1px rgba(255, 91, 91, 1);
-  }
+			/* de meeste background properties zijn voor alle links gelijk */
+			background-size:auto 2em;
+			background-position:1em center;
+			background-repeat:no-repeat;
+			border-top:solid 1px rgba(255, 91, 91, 1);
+}
   
-  li.active a {
+li.active a {
 	font-weight:bold;
-  }
-  
-  @media (min-width:64em) {
+}
+
+
+/* -------------------HEADER NAV---------------------------- */
+@media (min-width:64em) {
 	nav {
-	  /* jouw code hier */
 	  order:0;  
 	}
 	
 	nav button {
-	  /* jouw code hier */
-	  display:none;
+		display:none;
 	}
 	
 	nav ul {
-	  /* jouw code hier */
 	  position:relative;
 	  padding:0;
 	  transform:none;
 	  background:none;
-	  
-	  /* new */
 	  display:flex;
 	}
 	
 	nav a {
-	  /* jouw code hier */
 	  border:none;
 	}
 	
@@ -240,7 +230,7 @@ article h3 {
 	font-size: 24px;
 }
 
-p, article time {
+p, time {
 	font-size: 18px;
 	margin-bottom: 0.5rem;
 }
@@ -257,27 +247,27 @@ figcaption {
 ########################## ELEMENTEN ###########################
 --------------------------------------------------------------*/
 
+
 /* buttons */
-a .button {
+a .btn {
 	font-family: 'Work Sans', sans-serif;
 	text-decoration: none;
 	color: white;
 }
 
-.button {
+.btn {
 			/* position: absolute; */
 	background-color: rgb(255, 91, 91);
 	padding: 20px;
-
 	font-size: 22px;
 	text-align: center;
 }
 
-.button:hover {
+.btn:hover {
 	background-color: #ff3737;
 }
 
-/* Article */
+/*---------- KNOPJE 'ZOEKEN' ----------*/
 article {
 	margin: 1em;
 }
